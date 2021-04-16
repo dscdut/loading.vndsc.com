@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSC Loading spinner</title>
     <meta name="description" content="A Loading spinner for the Google Developer student clubs. Passionately made by chapter Danang university of Technology">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
-  	<link rel="shortcut icon" href="/favicon.ico">
-	  <link rel="icon" type="image/png" sizes="32x32" href="/dsc_icon.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="/dsc_icon.png">
+  	<link rel="shortcut icon" href="/img/favicon.ico">
+	  <link rel="icon" type="image/png" sizes="32x32" href="/img/dsc_icon.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="/img/dsc_icon.png">
 
 	  <!-- Apple -->
 	  <meta name="apple-mobile-web-app-title" content="DSC Loading spinner">
-	  <link rel="apple-touch-icon" sizes="180x180" href="/dsc_icon_light.png">
-	  <link rel="mask-icon" href="/logo.svg" color="grey">
+	  <link rel="apple-touch-icon" sizes="180x180" href="/img/dsc_icon_light.png">
+	  <link rel="mask-icon" href="/img/logo.svg" color="grey">
 
     <meta name="robots" content="index, follow">
     <!--  -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="DSC Loading spinner" />
     <meta property="og:description" content="A Loading spinner for the Google Developer student clubs. Passionately made by chapter Danang university of Technology" />
-    <meta property="og:image" content="/thumbnail.png" />
+    <meta property="og:image" content="/img/thumbnail.png" />
     <meta property="og:url" content="http://loading.vndsc.com/" />
     <meta property="og:site_name" content="DSC Loading spinner" />
     <!--  -->
     <meta name="twitter:title" content="DSC Loading spinner">
     <meta name="twitter:description" content="A Loading spinner for the Google Developer student clubs. Passionately made by chapter Danang university of Technology">
-    <meta name="twitter:image" content="/thumbnail.png">
+    <meta name="twitter:image" content="/img/thumbnail.png">
 
-    <link rel="stylesheet" href="style.min.css" />
+    <link rel="stylesheet" href="./css/dsc-loader.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app" style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div id="app" style="height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+      <h1 style="font-family: Google Sans; color: rgb(158, 158, 158);">
+        Google DSC Loading spinner
+      </h1>
+
       <!-- DSC LOADER -->
       <div class="loader" style="transform: scale(0.5);">
         <div class="dot dot1"></div>
@@ -45,6 +53,31 @@
         <div class="dot dot7"></div>
       </div>
       <!-- END DSC LOADER -->
+
+
+      <!-- GITHUB BUTTONS -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <a
+          class="github-button"
+          href="https://github.com/dscdut/loading.vndsc.com"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Star dscdut/loading.vndsc.com on GitHub"
+        >
+          Star
+        </a>
+        <a
+          class="github-button"
+          href="https://github.com/dscdut/loading.vndsc.com/archive/master.zip"
+          data-size="large"
+          aria-label="Download dscdut/loading.vndsc.com on GitHub"
+        >
+          Download
+        </a>
+      </div>
+      <!-- END GITHUB BUTTON -->
     </div>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
