@@ -5,58 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSC Loading spinner</title>
-    <meta name="description" content="A Loading spinner for the Google Developer student clubs. Passionately made by chapter Danang university of Technology">
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <meta
+      name="description"
+      content="A Loading spinner for the Google Developer student clubs. Passionately made by chapter Danang university of Technology"
+    />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 
-  	<link rel="shortcut icon" href="/img/favicon.ico">
-	  <link rel="icon" type="image/png" sizes="32x32" href="/img/dsc_icon.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="/img/dsc_icon.png">
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/dsc_icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/dsc_icon.png" />
 
-	  <!-- Apple -->
-	  <meta name="apple-mobile-web-app-title" content="DSC Loading spinner">
-	  <link rel="apple-touch-icon" sizes="180x180" href="/img/dsc_icon_light.png">
-	  <link rel="mask-icon" href="/img/logo.svg" color="grey">
+    <!-- Apple -->
+    <meta name="apple-mobile-web-app-title" content="DSC Loading spinner" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/dsc_icon_light.png"
+    />
+    <link rel="mask-icon" href="/img/logo.svg" color="grey" />
 
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow" />
     <!--  -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="DSC Loading spinner" />
-    <meta property="og:description" content="A Loading spinner for the Google Developer student clubs. Passionately made by chapter Danang university of Technology" />
+    <meta
+      property="og:description"
+      content="A Loading spinner for the Google Developer student clubs. Passionately made by chapter Danang university of Technology"
+    />
     <meta property="og:image" content="/img/thumbnail.png" />
     <meta property="og:url" content="http://loading.vndsc.com/" />
     <meta property="og:site_name" content="DSC Loading spinner" />
     <!--  -->
-    <meta name="twitter:title" content="DSC Loading spinner">
-    <meta name="twitter:description" content="A Loading spinner for the Google Developer student clubs. Passionately made by chapter Danang university of Technology">
-    <meta name="twitter:image" content="/img/thumbnail.png">
+    <meta name="twitter:title" content="DSC Loading spinner" />
+    <meta
+      name="twitter:description"
+      content="A Loading spinner for the Google Developer student clubs. Passionately made by chapter Danang university of Technology"
+    />
+    <meta name="twitter:image" content="/img/thumbnail.png" />
+
+    <style>
+      :root {
+        --color-red: #ea4335;
+        --color-blue: #4285f4;
+        --color-yellow: #fbbc05;
+        --color-green: #34a853;
+      }
+    </style>
 
     <link rel="stylesheet" href="./css/dsc-loader.min.css" />
+    <link rel="stylesheet" href="./css/google-spinner.min.css" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .wrapper {
+        width: 450px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fafafa;
+        border-radius: 5px;
+      }
+
+      /* Small devices (landscape phones, less than 768px) */
+      @media (max-width: 767.98px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .wrapper {
+          width: 300px;
+          height: 200px;
+          justify-content: center;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="app" style="height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-
-      <h1 style="font-family: Google Sans; color: rgb(158, 158, 158);">
+    <div
+      id="app"
+      style="
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <h1 style="font-family: Google Sans; color: rgb(158, 158, 158); text-align: center;">
         Google DSC Loading spinner
       </h1>
 
-      <!-- DSC LOADER -->
-      <div class="loader" style="transform: scale(0.5);">
-        <div class="dot dot1"></div>
-        <div class="dot dot2"></div>
-        <div class="dot dot3"></div>
-        <div class="dot dot4"></div>
-        <div class="dot dot5"></div>
-        <div class="dot dot6"></div>
-        <div class="dot dot7"></div>
-      </div>
-      <!-- END DSC LOADER -->
+      <div class="container">
+        <div class="wrapper">
+          <!-- DSC LOADER -->
+          <div class="loader">
+          <!-- <div class="loader" style="transform: scale(0.5)"> -->
+            <div class="dot dot1"></div>
+            <div class="dot dot2"></div>
+            <div class="dot dot3"></div>
+            <div class="dot dot4"></div>
+            <div class="dot dot5"></div>
+            <div class="dot dot6"></div>
+            <div class="dot dot7"></div>
+          </div>
+          <!-- END DSC LOADER -->
+        </div>
 
+        <div class="wrapper">
+          <!-- GOOGLE SPINNER -->
+          <div class="spinner">
+            <svg class="circular" viewBox="25 25 50 50">
+              <circle
+                class="path"
+                cx="50"
+                cy="50"
+                r="20"
+                fill="none"
+                stroke-width="2"
+                stroke-miterlimit="10"
+              />
+            </svg>
+          </div>
+          <!-- END GOOGLE SPINNER -->
+        </div>
+      </div>
 
       <!-- GITHUB BUTTONS -->
-      <div style="text-align: center; margin-top: 2rem;">
+      <div style="text-align: center; margin-top: 2rem">
         <a
           class="github-button"
           href="https://github.com/dscdut/loading.vndsc.com"

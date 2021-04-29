@@ -1,69 +1,62 @@
-:root {
-  --color-red: #EA4335;
-  --color-blue: #4285F4;
-  --color-yellow: #FBBC05;
-  --color-green: #34A853;
-}
-
 .loader {
   position: relative;
-  width: 450px;
-  height: 300px;
+  width: 225px;
+  height: 150px;
 }
 
 .dot {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   border-radius: 9999px;
 }
 
 .dot1 {
-  top: 110px;
+  top: 55px;
   background-color: var(--color-blue);
-  transform-origin: 40px center;
+  transform-origin: 20px center;
   animation: dsc-dot1 6s infinite ease-in-out;
   z-index: 2;
 }
 
 .dot2 {
-  left: 125px;
-  top: 110px;
+  left: 62.5px;
+  top: 55px;
   background-color: var(--color-red);
   animation: dsc-dot2 6s infinite ease-in-out;
 }
 
 .dot3 {
   bottom: 0;
-  left: 125px;
+  left: 62.5px;
   background-color: var(--color-green);
   animation: dsc-dot3 6s infinite ease-in-out;
 }
 
 .dot4 {
-  left: 125px;
+  left: 62.5px;
   background-color: var(--color-green);
   animation: dsc-dot4 6s infinite ease-in-out;
 }
 
 .dot5 {
-  left: 125px;
-  top: 110px;
+  left: 62.5px;
+  top: 55px;
   background-color: var(--color-green);
   animation: dsc-dot5 6s infinite ease-in-out;
 }
 
 .dot6 {
-  left: 125px;
+  left: 62.5px;
   bottom: 0;
   background-color: var(--color-yellow);
   animation: dsc-dot6 6s infinite ease-in-out;
 }
 
 .dot7 {
-  top: 110px;
+  top: 55px;
   background-color: var(--color-red);
-  transform-origin: 40px center;
+  transform-origin: 20px center;
   animation: dsc-dot7 6s infinite ease-in-out;
   z-index: 1;
 }
@@ -78,10 +71,10 @@
     transform: scale(1);
   }
   25%, 75% {
-    width: 80px;
+    width: 40px;
   }
   30%, 70% {
-    width: 200px;
+    width: 100px;
     transform: rotate(0deg);
   }
   35%, 65% {
@@ -91,7 +84,7 @@
     transform: rotate(30deg);
   }
   50% {
-    width: 200px;
+    width: 100px;
     transform: rotate(30deg);
   }
 }
@@ -107,17 +100,17 @@
   }
   10%, 90% {
     opacity: 1;
-    width: 80px;  
+    width: 40px;  
     transform: scale(1);
   }
   15%, 85% {
-    left: 125px;
+    left: 62.5px;
   }
   20%, 80% {
-    width: 200px;
-    left: 250px;
+    width: 100px;
+    left: 125px;
     transform: scale(1);
-    transform-origin: 160px center;
+    transform-origin: 80px center;
   }
   25%, 75% {
     transform: scale(0);
@@ -130,18 +123,18 @@
     background-color: var(--color-yellow);
   }
   40%, 60% {
-    width: 200px;
-    left: 250px;
+    width: 100px;
+    left: 125px;
     transform: scale(1);
     transform: rotate(-30deg);
   }
   50% {
-    width: 200px;
-    left: 250px;
+    width: 100px;
+    left: 125px;
     background-color: var(--color-yellow);
     transform: scale(1);
     transform: rotate(-30deg);
-    transform-origin: 160px center;
+    transform-origin: 80px center;
   }
 }
 
@@ -157,15 +150,15 @@
   15%, 85% {
     opacity: 1;
     transform: scale(1);
-    width: 80px;
+    width: 40px;
   }
   20%, 80% {
-    width: 200px;
-    left: 125px;
+    width: 100px;
+    left: 62.5px;
   }
   25%, 75% {
-    width: 80px;
-    left: 245px;
+    width: 40px;
+    left: 122.5px;
     transform: scale(1);
   }
   30%, 70% {
@@ -188,15 +181,15 @@
   20%, 80% {
     opacity: 1;
     transform: scale(1);
-    width: 80px;
+    width: 40px;
   }
   25%, 75% {
-    width: 200px;
-    left: 125px;
+    width: 100px;
+    left: 62.5px;
   }
   30%, 70% {
-    width: 80px;
-    left: 245px;
+    width: 40px;
+    left: 122.5px;
     transform: scale(1);
   }
   35%, 65% {
@@ -220,14 +213,14 @@
   15%, 85% {
     opacity: 1;
     transform: scale(1);
-    width: 80px;
-    left: 125px;
+    width: 40px;
+    left: 62.5px;
     transform-origin: left center;
   }
   20%, 80% {
-    width: 200px;
-    left: 250px;
-    transform-origin: 160px center;
+    width: 100px;
+    left: 125px;
+    transform-origin: 80px center;
   }
   30%, 70% {
     transform: rotate(0deg);
@@ -242,9 +235,9 @@
     opacity: 1;
     transform: scale(1);
     transform: rotate(30deg);
-    transform-origin: 160px center;
-    left: 250px;
-    width: 200px;
+    transform-origin: 80px center;
+    left: 125px;
+    width: 100px;
   }
 }
 
@@ -260,15 +253,15 @@
   20%, 80% {
     opacity: 1;
     transform: scale(1);
-    width: 80px;
+    width: 40px;
   }
   22.5%, 77.5% {
-    width: 200px;
-    left: 125px;
+    width: 100px;
+    left: 62.5px;
   }
   27.5%, 72.5% {
-    width: 80px;
-    left: 245px;
+    width: 40px;
+    left: 122.5px;
     transform: scale(1);
   }
   32.5%, 67.5% {
@@ -290,12 +283,12 @@
   }
   36%, 64% {
     transform: scale(1);
-    width: 200px;
+    width: 100px;
     transform: rotate(-30deg);
   }
   50% {
     transform: scale(1);
-    width: 200px;
+    width: 100px;
     transform: rotate(-30deg);
   }
 }
