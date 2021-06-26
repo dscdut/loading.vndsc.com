@@ -17,17 +17,12 @@
 
     <!-- Apple -->
     <meta name="apple-mobile-web-app-title" content="DSC Loading spinner" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/img/dsc_icon_light.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/dsc_icon_light.png" />
     <link rel="mask-icon" href="/img/logo.svg" color="grey" />
 
     <meta name="robots" content="index, follow" />
-    <!--  -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="DSC Loading spinner" />
+    <meta property="og:title" content="Google Loading spinner" />
     <meta
       property="og:description"
       content="A Loading spinner for the Google Developer student clubs. Passionately made by chapter Danang university of Technology"
@@ -43,71 +38,24 @@
     />
     <meta name="twitter:image" content="/img/thumbnail.png" />
 
-    <style>
-      :root {
-        --color-red: #ea4335;
-        --color-blue: #4285f4;
-        --color-yellow: #fbbc05;
-        --color-green: #34a853;
-      }
-    </style>
+
+    <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="./css/dsc-loader.min.css" />
     <link rel="stylesheet" href="./css/google-spinner.min.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      .container {
-        position: relative;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        gap: 30px;
-      }
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@500&display=swap" rel="stylesheet" />
 
-      .wrapper {
-        width: 450px;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #fafafa;
-        border-radius: 5px;
-      }
-
-      /* Small devices (landscape phones, less than 768px) */
-      @media (max-width: 767.98px) {
-        .container {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .wrapper {
-          width: 300px;
-          height: 200px;
-          justify-content: center;
-        }
-      }
-    </style>
   </head>
   <body>
-    <div
-      id="app"
-      style="
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      "
-    >
-      <h1 style="font-family: Google Sans; color: rgb(158, 158, 158); text-align: center;">
-        Google DSC Loading spinner
+    <div id="app">
+      <h1 style="color: rgb(158, 158, 158); text-align: center; margin-bottom: 10px;">
+        Google Loaders
       </h1>
+      <h2 style="color: rgb(158, 158, 158); text-align: center; font-size: 16px;">
+        Helpful Google loaders animation built with HTML & CSS, also MP4 and GIF formats are provided for other purposes
+      </h2>
 
       <div class="container">
         <div class="wrapper">
@@ -165,7 +113,108 @@
         </a>
       </div>
       <!-- END GITHUB BUTTON -->
+
+
+
+
+
+      <br />
+      <br />
+      <br />
+      <h2 style="color: rgb(158, 158, 158); text-align: center;">
+        Use it in your code:
+      </h2>
+      <div class="container">
+        <div class="wrapper" style="align-items: flex-start; flex-direction: column; height: 400px;">
+          <p>DSC Loading Spinner</p>
+          <p>
+            Copy minified CSS from this file
+            <a href="/css/dsc-loader.min.css" target="_blank" rel="noopener noreferrer">
+              (Click here)
+            </a>
+          </p>
+          <div>
+            <p>
+              Then add HTML in your code:
+            </p>
+<pre style="padding: 20px; color: rgb(11, 34, 34); background-color: rgb(238, 238, 238); border-radius: 10px;">
+&#x3C;div class=&#x22;loader&#x22;&#x3E;
+  &#x3C;div class=&#x22;dot dot1&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;dot dot2&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;dot dot3&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;dot dot4&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;dot dot5&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;dot dot6&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;dot dot7&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</pre>
+          </div>
+        </div>
+        <div class="wrapper" style="align-items: flex-start; flex-direction: column; height: 400px;">
+          <p>Google Loading Spinner</p>
+          <p>
+            Copy minified CSS from this file
+            <a href="/css/google-spinner.min.css" target="_blank" rel="noopener noreferrer">
+              (Click here)
+            </a>
+          </p>
+          <div>
+            <p>
+              Then add HTML in your code:
+            </p>
+<pre style="padding: 20px; color: rgb(11, 34, 34); background-color: rgb(238, 238, 238); border-radius: 10px;">
+&#x3C;div class=&#x22;spinner&#x22;&#x3E;
+  &#x3C;svg class=&#x22;circular&#x22; viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+    &#x3C;circle
+      class=&#x22;path&#x22;
+      cx=&#x22;50&#x22;
+      cy=&#x22;50&#x22;
+      r=&#x22;20&#x22;
+      fill=&#x22;none&#x22;
+      stroke-width=&#x22;2&#x22;
+      stroke-miterlimit=&#x22;10&#x22;
+    /&#x3E;
+  &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <h2 style="color: rgb(158, 158, 158); text-align: center;">
+        Use it in your media:
+      </h2>
+      <div class="container downloadable">
+        <div class="wrapper" style="align-items: flex-start; flex-direction: column; height: auto;">
+          <p>DSC Loading Spinner</p>
+          <a href="./download/dsc-loader-compressed.mp4" download target="_blank" rel="noopener noreferrer">
+            Download Full HD MP4 compressed - 422Kb (Recommended)
+          </a>
+          <a href="./download/dsc-loader.mp4" download target="_blank" rel="noopener noreferrer">
+            Download Full HD MP4 original - 5.02Mb
+          </a>
+          <a href="./download/dsc-loader.gif" download target="_blank" rel="noopener noreferrer">
+            Download GIF - 548Kb
+          </a>
+        </div>
+        <div class="wrapper" style="align-items: flex-start; flex-direction: column; height: auto;">
+          <p>Google Loading Spinner</p>
+          <a href="./download/google-loader-compressed.mp4" download target="_blank" rel="noopener noreferrer">
+            Download Full HD MP4 compressed - 349Kb (Recommended)
+          </a>
+          <a href="./download/google-loader.mp4" download target="_blank" rel="noopener noreferrer">
+            Download Full HD MP4 original - 3.65Mb
+          </a>
+          <a href="./download/googler-loader.gif" download target="_blank" rel="noopener noreferrer">
+            Download GIF - 289Kb
+          </a>
+        </div>
+      </div>
     </div>
+    <div style="height: 100px"></div>
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
