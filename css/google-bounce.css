@@ -1,3 +1,10 @@
+:root {
+  --color-red: #ea4335;
+  --color-blue: #4285f4;
+  --color-yellow: #fbbc05;
+  --color-green: #34a853;
+}
+
 .bounce {
   display: flex;
   align-items: flex-end;
@@ -12,30 +19,30 @@
 }
 
 .bounce-blue {
-  background-color: #4285F4;
+  background-color: var(--color-blue);
 }
 
 .bounce-red {
-  background-color: #EA4335;
+  background-color: var(--color-red);
   animation-delay: 0.2s;
 }
 
 .bounce-yellow {
-  background-color: #FBBC05;
+  background-color: var(--color-yellow);
   animation-delay: 0.4s;
 }
 
 .bounce-green {
-  background-color: #34A853;
+  background-color: var(--color-green);
   animation-delay: 0.6s;
 }
 
 @keyframes loader-bounce {
   0%,
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   40% {
-      transform: translateY(-1.2rem);
+    transform: translateY(-1.2rem);
   }
 }

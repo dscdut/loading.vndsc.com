@@ -1,3 +1,10 @@
+:root {
+  --color-red: #ea4335;
+  --color-blue: #4285f4;
+  --color-yellow: #fbbc05;
+  --color-green: #34a853;
+}
+
 .spinner {
   position: relative;
   margin: 0 auto;
